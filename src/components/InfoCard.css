@@ -70,25 +70,7 @@
   line-height: 1.6;
 }
 
-.DetailsBtn {
-  background-color: var(--accent);
-  color: #2d3436;
-  width: 160px;
-  height: 40px;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.DetailsBtn:hover {
-  background-color: #a4cf50;
-  color: white;
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
