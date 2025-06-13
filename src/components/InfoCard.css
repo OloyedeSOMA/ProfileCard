@@ -20,7 +20,6 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #f0f0f0, #f9f9f9);
   transition: transform 0.3s ease;
 }
 
