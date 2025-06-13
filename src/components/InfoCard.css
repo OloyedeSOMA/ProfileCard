@@ -1,0 +1,111 @@
+:root {
+  --bg-color: #f5f7fa;
+  --card-bg: #ffffff;
+  --primary: #4a90e2;
+  --secondary: #7ed6df;
+  --accent: #badc58;
+  --text-dark: #2f3640;
+  --text-light: #718093;
+}
+
+#Container {
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #f0f0f0, #f9f9f9);
+  transition: transform 0.3s ease;
+}
+
+#Container:hover {
+  transform: translateY(-5px);
+}
+
+.ImageContainer {
+  flex: 1 1 200px;
+  position: relative;
+}
+
+.image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  clip-path: circle(50%);
+  margin-right: 20px;
+  object-fit: cover;
+  border: 4px solid var(--secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.InfoContainer {
+  flex: 2 1 300px;
+  text-align: left;
+}
+
+.NameAndTitle h2 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.NameAndTitle h4 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: var(--text-light);
+}
+
+.Bio {
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.DetailsBtn {
+  background-color: var(--accent);
+  color: #2d3436;
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.DetailsBtn:hover {
+  background-color: #a4cf50;
+  color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #Container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    float: none;
+    margin: auto;
+    display: block;
+    shape-outside: none;
+    clip-path: none;
+  }
+
+  .InfoContainer {
+    text-align: center;
+  }
+}
